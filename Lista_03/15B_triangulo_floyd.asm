@@ -6,6 +6,8 @@ main:
 	syscall
 	add $8,$0,$2
 	
+	addi $8,$8,1
+	
 	addi $9,$0,11		# para encontrar os multiplos
 	addi $10,$0,13		# para encontrar os multiplos
 	addi $11,$0,17		# para encontrar os multiplos
