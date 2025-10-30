@@ -1,0 +1,33 @@
+.text
+
+main:
+	addi $2,$0,5
+	syscall			# entrada
+	add $8,$0,$2
+
+	addi $9,$0,1		# subtração e referência p o laço
+	addi $10,$0,0		# temporária
+	addi $11,$0,0		# acumulador
+	
+	add $10,$0,$8
+	
+	subi $8,$8,1
+	
+	mul $12,$8,$10
+	
+laço:
+	slt $13,$9,$8
+	beq $13,$0,fim
+
+	subi $8,$8,1
+	
+	mul $12,$12,$8
+	
+	j laço
+fim:
+	add $4,$0,$12
+	addi $2,$0,1
+	syscall
+	
+	addi $2,$0,10
+	syscall
