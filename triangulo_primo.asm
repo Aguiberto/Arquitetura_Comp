@@ -54,7 +54,7 @@ primo:
 	
 	addi $10,$10,1
 	addi $12,$12,1
-	addi $8,$0,2
+	addi $8,$0,2		# reinicia a quantidade de divisores
 	
 	slt $14,$10,$11
 	beq $14,$0,kbra
