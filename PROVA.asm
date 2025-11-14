@@ -60,15 +60,15 @@ verification: beq $9,$0,fim
 	j verification
 	
 troca:
-	add $10,$0,$14
+	add $10,$0,$14		# atualiza o valor da maior soma
 	add $18,$0,$11		# I do maior
 	
-	addi $8,$8,4
-	addi $9,$9,-1
-	addi $11,$11,1
+	addi $8,$8,4		# aumenta o endereço de memória
+	addi $9,$9,-1		#  decrementa o N
+	addi $11,$11,1		# aumenta a valor de I
 	
-	add $16,$0,$12
-	add $17,$0,$13
+	add $16,$0,$12		# valor que compõe a soma da maior soma
+	add $17,$0,$13		# valor que compõe a soma da maior soma
 	
 	beq $9,$0,fim
 	

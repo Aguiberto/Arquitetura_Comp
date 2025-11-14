@@ -2,7 +2,21 @@
 .text
 		# algoritmo de kadane
 		# maior sublista contígua
-		# aarray com 10 elementos
+		# array com 10 elementos
+		
+		# int max_atual = array[0];
+		# int max_global = array[0];
+		#
+		# for(int i = 0; i > n; i++){
+		#  if(array[i] > max_atual + array[i]){
+		#   max_atual = array[i];
+		# } else{
+		#   max_atual + = array[i];
+		# }
+		#  if(max_atual > max_global){
+		#    max_global = max_atual
+		# }
+		#}
 		
 main:
 	lui $8,0x1001
