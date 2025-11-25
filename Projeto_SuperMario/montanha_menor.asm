@@ -1,6 +1,6 @@
 .text
 		# MONTANHA MENOR
-		# dimensões: 5 uG x 5 uG
+		# dimensões: 7 uG x 12 uG (altura x comprimento)
 		# altura: linha 49 - 54
 		# comprimento: coluna BH-BU
 	
