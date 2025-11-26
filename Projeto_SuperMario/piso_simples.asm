@@ -15,4 +15,3 @@ piso:	beq $10,$0,fim
 	
 fim:	addi $2,$0,10
 	syscall
-	

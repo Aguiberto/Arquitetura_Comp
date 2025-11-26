@@ -69,7 +69,7 @@ main:	lui $8,0x1001
 	sw $9,24844($8)
 	
 	sw $9,24324($8)			# linha 7 (48)
-	sw $9,24428($8)			# TOPO
+	sw $9,24328($8)			# TOPO
 	
 	addi $2,$0,10
 	syscall
