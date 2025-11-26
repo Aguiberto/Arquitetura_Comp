@@ -8,7 +8,7 @@
 
 main: 	lui $8,0x1001
 	ori $9,0x000300		# COR: PRETO
-	ori $10,0xfd9939	# COR: MARROM CLARO
+	ori $10,0xfd9939	# COR: MARROM ESCURO
 	
 	sw $9,20692($8)
 	sw $9,20696($8)
