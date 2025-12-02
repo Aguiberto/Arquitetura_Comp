@@ -3,7 +3,7 @@
 main: 	lui $8, 0x1001
 	ori $9, 0x5c9df2
 	
-	addi $10,$0,8191
+	addi $10,$0,131068
 	
 ceu:	beq $10,$0,fim
 	sw $9,0($8)
