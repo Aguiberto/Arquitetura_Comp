@@ -2177,14 +2177,14 @@ fimCano:
 	 addi $10,$0,0
 	 addi $11,$0,0
 	 addi $1,$0,0
-	 
-# ------------------- BLOCOS -------------------
 
-iBlocos: 	
-	lui $8, 0x1001
-	ori $1, 46656
+# ------------------- BLOCOS DE INTERROGACAO -------------------
+
+iInterrogacao: 	
+ 	lui $8, 0x1001
+	ori $1, 58944
 	add $24, $8, $1
-	ori $1, 46800
+	ori $1, 59088
 	add $25, $8, $1
 	
 	ori $9, 0x5c94fc  #azul
@@ -2193,7 +2193,7 @@ iBlocos:
 	ori $12, 0xfc9838 #laranja
 	ori $13, 0x000000 #preto
 	
-	#  PRIMEIRA LINHA 
+	# PRIMEIRA LINHA
 	sw $9, 0($24)
 	sw $9, 0($25)
 	addi $24, $24, 4
@@ -2216,7 +2216,7 @@ fimforMarrom1:
 	addi $24, $24, 980
 	addi $25, $25, 980
 	
-	#  SEGUNDA LINHA 
+	# SEGUNDA LINHA
 	sw $10, 0($24)
 	sw $10, 0($25)
 	addi $24, $24, 4
@@ -2239,7 +2239,7 @@ fimforLaranja1:
 	addi $24, $24, 980
 	addi $25, $25, 980
 	
-	#  TERCEIRA LINHA 
+	# TERCEIRA LINHA
 
 	sw $10, 0($24)
 	sw $10, 0($25)
@@ -2283,7 +2283,7 @@ fimforMarrom2:
 	addi $24, $24, 980
 	addi $25, $25, 980
 	
-	#  QUARTA LINHA 
+	# QUARTA LINHA
 	sw $10, 0($24)
 	sw $10, 0($25)
 	addi $24, $24, 4
@@ -2333,7 +2333,7 @@ fimforMarrom2:
 	addi $24, $24, 980
 	addi $25, $25, 980
 	
-	#  QUINTA E SEXTA LINHA 
+	# QUINTA E SEXTA LINHA
 	addi $20, $0, 2
 
 forQuintaESextaLinha:
@@ -2394,7 +2394,7 @@ fimforQuintaESextaLinha:
 	sw $10, -1000($24)
 	sw $10, -1000($25)
 	
-	#  SETIMA LINHA 
+	# SETIMA LINHA
 	sw $10, 0($24)
 	sw $10, 0($25)
 	addi $24, $24, 4
@@ -2444,7 +2444,7 @@ fimforQuintaESextaLinha:
 	addi $24, $24, 980
 	addi $25, $25, 980
 	
-	#  OITAVA, NONA E DECIMA LINHA 
+	# OITAVA, NONA E DECIMA LINHA
 	addi $20, $20, 3
 
 for8910Linha:
@@ -2516,7 +2516,7 @@ fimfor8910Linha:
 	sw $13, -2040($24)
 	sw $13, -2040($25)
 	
-	#  DECIMA PRIMEIRA LINHA 
+	# DECIMA PRIMEIRA LINHA 
 	addi $20, $20, 12
 	
 ultimaLinha:
@@ -2528,16 +2528,260 @@ ultimaLinha:
 	
 	addi $20, $20, -1
 	j ultimaLinha
-	
 fimUltimaLinha:
-
+	addi $1,$0,0
 	addi $9,$0,0
 	addi $10,$0,0
 	addi $11,$0,0
 	addi $12,$0,0
 	addi $13,$0,0
+	addi $24,$0,0
+	addi $25,$0,0
+	
+	
+# ------------------- BLOCOS DE TIJOLOS -------------------
+iTijolos:
 
-				
-				
-				
-				
+ 	lui $8, 0x1001
+	
+	ori $1, 59040
+	add $24, $8, $1
+
+	andi $1, $0, 0
+	
+	ori $1, 59136
+	add $25, $8, $1
+	
+	ori $9, 0x5c94fc  #azul
+	ori $10, 0xc84c0c #marrom	
+	ori $11, 0xfcbcb0 #rosa
+	ori $12, 0x000000 #preto
+	
+	addi $20, $0, 11
+	
+	# PRIMEIRA LINHA 
+forRosaTij:
+	beq $20, $0, fimforRosaTij
+	sw $11, 0($24)
+	sw $11, 0($25)
+	
+	addi $24, $24, 4
+	addi $25, $25, 4
+	addi $20, $20, -1
+	j forRosaTij
+	
+fimforRosaTij:
+	sw $9, 0($24)
+	sw $9, 0($25)	
+	addi $24, $24, 980
+	addi $25, $25, 980
+	#ponteiro movido para a segunda linha
+	# SEGUNDA, TERCEIRA, OITAVA E NONA LINHA 
+	addi $20, $0, 5
+	
+forMarromTij1:
+	beq $20, $0, fimforMarromTij1
+	sw $10, 0($24)
+	sw $10, 0($25)
+	sw $10, 1024($24)
+	sw $10, 1024($25)
+	sw $10, 6144($24)
+	sw $10, 6144($25)
+	sw $10, 7168($24)
+	sw $10, 7168($25)
+	addi $24, $24, 4
+	addi $25, $25, 4
+		
+	addi $20, $20, -1
+	j forMarromTij1
+	
+fimforMarromTij1:
+	sw $12, 0($24)
+	sw $12, 0($25)
+	sw $12, 1024($24)
+	sw $12, 1024($25)
+	sw $12, 6144($24)
+	sw $12, 6144($25)
+	sw $12, 7168($24)
+	sw $12, 7168($25)
+	addi $24, $24, 4
+	addi $25, $25, 4
+	
+	addi $20, $0, 4
+
+forMarromTij2:
+	beq $20, $0, fimforMarromTij2
+	sw $10, 0($24)
+	sw $10, 0($25)
+	sw $10, 1024($24)
+	sw $10, 1024($25)
+	sw $10, 6144($24)
+	sw $10, 6144($25)
+	sw $10, 7168($24)
+	sw $10, 7168($25)
+	addi $24, $24, 4
+	addi $25, $25, 4
+		
+	addi $20, $20, -1
+	j forMarromTij2
+	
+fimforMarromTij2:
+	sw $12, 0($24)
+	sw $12, 0($25)
+	sw $12, 1024($24)
+	sw $12, 1024($25)
+	sw $12, 6144($24)
+	sw $12, 6144($25)
+	sw $12, 7168($24)
+	sw $12, 7168($25)
+	addi $24, $24, 4
+	addi $25, $25, 4
+	sw $10, 0($24)
+	sw $10, 0($25)
+	sw $10, 1024($24)
+	sw $10, 1024($25)
+	sw $10, 6144($24)
+	sw $10, 6144($25)
+	sw $10, 7168($24)
+	sw $10, 7168($25)
+	addi $24, $24, 2004
+	addi $25, $25, 2004
+	#ponteiro movido para a quarta linha
+
+	# QUARTA E SETIMA LINHA 
+	addi $20, $0, 11
+forPretoTij1:
+	beq $20, $0, fimforPretoTij1
+	sw $12, 0($24)
+	sw $12, 0($25)
+	sw $12, 3072($24)
+	sw $12, 3072($25)
+	addi $24, $24, 4
+	addi $25, $25, 4
+	
+	addi $20, $20, -1
+	j forPretoTij1
+	
+fimforPretoTij1:
+	sw $10, 0($24)
+	sw $10, 0($25)
+	sw $10, 3072($24)
+	sw $10, 3072($25)
+	addi $24, $24, 980
+	addi $25, $25, 980
+	#ponteiro movido para a quinta linha
+	# QUINTA E SEXTA LINHA
+	sw $10, 0($24)
+	sw $10, 0($25)
+	sw $10, 1024($24)
+	sw $10, 1024($25)
+	addi $24, $24, 4
+	addi $25, $25, 4
+	
+	sw $10, 0($24)
+	sw $10, 0($25)
+	sw $10, 1024($24)
+	sw $10, 1024($25)
+	addi $24, $24, 4
+	addi $25, $25, 4
+	
+	sw $12, 0($24)
+	sw $12, 0($25)
+	sw $12, 1024($24)
+	sw $12, 1024($25)
+	addi $24, $24, 4
+	addi $25, $25, 4
+	
+	sw $10, 0($24)
+	sw $10, 0($25)
+	sw $10, 1024($24)
+	sw $10, 1024($25)
+	addi $24, $24, 4
+	addi $25, $25, 4
+	
+	sw $10, 0($24)
+	sw $10, 0($25)
+	sw $10, 1024($24)
+	sw $10, 1024($25)
+	addi $24, $24, 4
+	addi $25, $25, 4
+	
+	sw $10, 0($24)
+	sw $10, 0($25)
+	sw $10, 1024($24)
+	sw $10, 1024($25)
+	addi $24, $24, 4
+	addi $25, $25, 4
+	
+	sw $10, 0($24)
+	sw $10, 0($25)
+	sw $10, 1024($24)
+	sw $10, 1024($25)
+	addi $24, $24, 4
+	addi $25, $25, 4
+	
+	sw $12, 0($24)
+	sw $12, 0($25)
+	sw $12, 1024($24)
+	sw $12, 1024($25)
+	addi $24, $24, 4
+	addi $25, $25, 4
+	
+	sw $10, 0($24)
+	sw $10, 0($25)
+	sw $10, 1024($24)
+	sw $10, 1024($25)
+	addi $24, $24, 4
+	addi $25, $25, 4
+	
+	sw $10, 0($24)
+	sw $10, 0($25)
+	sw $10, 1024($24)
+	sw $10, 1024($25)
+	addi $24, $24, 4
+	addi $25, $25, 4
+	
+	sw $10, 0($24)
+	sw $10, 0($25)
+	sw $10, 1024($24)
+	sw $10, 1024($25)
+	addi $24, $24, 4
+	addi $25, $25, 4
+	
+	sw $10, 0($24)
+	sw $10, 0($25)
+	sw $10, 1024($24)
+	sw $10, 1024($25)
+	addi $24, $24, 5076
+	addi $25, $25, 5076
+	
+	#ponteiro movido para a decima linha
+	# DECIMA E DECIMA PRIMEIRA LINHA 
+	
+	addi $20, $0, 12
+forPretoTij2:
+	beq $20, $0, fimforPretoTij2
+	sw $12, 0($24)
+	sw $12, 0($25)
+	sw $12, 1024($24)
+	sw $12, 1024($25)
+	addi $24, $24, 4
+	addi $25, $25, 4
+	
+	addi $20, $20, -1
+	j forPretoTij2
+	
+fimforPretoTij2:
+	addi $1,$0,0
+	addi $9,$0,0
+	addi $10,$0,0
+	addi $11,$0,0
+	addi $12,$0,0
+	addi $13,$0,0
+	addi $24,$0,0
+	addi $25,$0,0
+	
+resetDeOutrosRegistradoresEmUso:
+	addi $16,$0,0
+	addi $17,$0,0
+	
