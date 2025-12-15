@@ -2187,14 +2187,14 @@ resetDeOutrosRegistradoresEmUso:
 
 	
 
-infinito: 	addi $12,$12,255
+infinito: 	addi $12,$12,268
 		lui $8,0x1001
 		
 	j movimento	
 
 
 pre_movimento:
-		addi $25,$0,5000
+		addi $25,$0,35000
 		j timer
 movimento: beq $12,$0,infinito
 				
@@ -2548,6 +2548,8 @@ movimento: beq $12,$0,infinito
 	sw $9,25836($8)
 	sw $9,25840($8)
 	
+	sw $15,26832($8)
+	
 # -------------------------- NUVEM 2 ----------------------------------
 	
 
@@ -2826,6 +2828,8 @@ movimento: beq $12,$0,infinito
 	sw $9,32632($8)
 	sw $9,32636($8)
 	sw $9,32640($8)
+	
+	sw $15,33628($8)
 	
 	# movimento da nuvem
 	
