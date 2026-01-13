@@ -3535,6 +3535,259 @@ sw $9,102240($8)
 sw $9,102244($8)
 sw $9,102248($8)
 
+addi $9,$9,0
+
+# DO 
+	addi $4,$0,60
+	addi $5,$0,850
+	addi $6,$0,0		
+	addi $7,$0,100
+	addi $2,$0,31
+	syscall
+	
+	# PAUSA
+	addi $4,$0,500
+	addi $2,$0,32
+	syscall
+
+	# DO 
+	addi $4,$0,60
+	addi $5,$0,850
+	addi $6,$0,0		
+	addi $7,$0,100
+	addi $2,$0,31
+	syscall
+	
+	# PAUSA
+	addi $4,$0,500
+	addi $2,$0,32
+	syscall
+	
+	# SOL
+	addi $4,$0,67
+	addi $5,$0,850
+	addi $6,$0,0		
+	addi $7,$0,100
+	addi $2,$0,31
+	syscall
+	
+	# PAUSA
+	addi $4,$0,500
+	addi $2,$0,32
+	syscall
+	
+	# MI 
+	addi $4,$0,64
+	addi $5,$0,850
+	addi $6,$0,0		
+	addi $7,$0,100
+	addi $2,$0,31
+	syscall
+	
+# =================================================
+			
+	# PAUSA
+	addi $4,$0,400
+	addi $2,$0,32
+	syscall
+
+
+# =============== PARTE 2 ========================
+
+	# LA
+	addi $4,$0,69
+	addi $5,$0,500
+	addi $6,$0,0		
+	addi $7,$0,100
+	addi $2,$0,31
+	syscall
+	
+	# PAUSA
+	addi $4,$0,370
+	addi $2,$0,32
+	syscall
+	
+	# SI
+	addi $4,$0,71
+	addi $5,$0,500
+	addi $6,$0,0		
+	addi $7,$0,100
+	addi $2,$0,31
+	syscall
+	
+	# PAUSA
+	addi $4,$0,450
+	addi $2,$0,32
+	syscall
+	
+	# SIB 
+	addi $4,$0,67
+	addi $5,$0,450
+	addi $6,$0,0		
+	addi $7,$0,100
+	addi $2,$0,31
+	syscall
+	
+	# PAUSA
+	addi $4,$0,250
+	addi $2,$0,32
+	syscall
+	
+	# LA
+	addi $4,$0,69
+	addi $5,$0,450
+	addi $6,$0,0		
+	addi $7,$0,100
+	addi $2,$0,31
+	syscall
+
+# ================================================
+	
+	# PAUSA
+	addi $4,$0,400
+	addi $2,$0,32
+	syscall
+	
+# ================ PARTE 3 =======================
+	# SOL
+	addi $4,$0,67
+	addi $5,$0,500
+	addi $6,$0,0		
+	addi $7,$0,100
+	addi $2,$0,31
+	syscall
+	
+	# PAUSA
+	addi $4,$0,350
+	addi $2,$0,32
+	syscall
+	
+	# MI
+	addi $4,$0,65
+	addi $5,$0,400
+	addi $6,$0,0		
+	addi $7,$0,100
+	addi $2,$0,31
+	syscall
+	
+	# PAUSA
+	addi $4,$0,300
+	addi $2,$0,32
+	syscall
+	
+	# SOL
+	addi $4,$0,67
+	addi $5,$0,400
+	addi $6,$0,0		
+	addi $7,$0,100
+	addi $2,$0,31
+	syscall
+	
+	# PAUSA
+	addi $4,$0,300
+	addi $2,$0,32
+	syscall
+	
+	# LA 
+	addi $4,$0,69
+	addi $5,$0,400
+	addi $6,$0,0		
+	addi $7,$0,100
+	addi $2,$0,31
+	syscall
+	
+# =======================================
+	
+	# PAUSA
+	addi $4,$0,250
+	addi $2,$0,32
+	syscall
+	
+	# FA
+	addi $4,$0,65
+	addi $5,$0,300
+	addi $6,$0,0		
+	addi $7,$0,100
+	addi $2,$0,31
+	syscall
+	
+	# PAUSA
+	addi $4,$0,250
+	addi $2,$0,32
+	syscall
+	
+	# SOL 
+	addi $4,$0,67
+	addi $5,$0,300
+	addi $6,$0,0		
+	addi $7,$0,100
+	addi $2,$0,31
+	syscall
+
+#===========================================
+
+	# PAUSA
+	addi $4,$0,400
+	addi $2,$0,32
+	syscall
+	
+# ========== PARTE 4 =======================
+
+	# MI
+	addi $4,$0,64
+	addi $5,$0,400
+	addi $6,$0,0		
+	addi $7,$0,100
+	addi $2,$0,31
+	syscall
+	
+	# PAUSA
+	addi $4,$0,350
+	addi $2,$0,32
+	syscall
+	
+	# DO
+	addi $4,$0,60
+	addi $5,$0,300
+	addi $6,$0,0		
+	addi $7,$0,100
+	addi $2,$0,31
+	syscall
+	
+	# PAUSA
+	addi $4,$0,200
+	addi $2,$0,32
+	syscall
+	
+	# RE
+	addi $4,$0,62
+	addi $5,$0,300
+	addi $6,$0,0		
+	addi $7,$0,100
+	addi $2,$0,31
+	syscall
+	
+	# PAUSA
+	addi $4,$0,200
+	addi $2,$0,32
+	syscall
+	
+	# SI 
+	addi $4,$0,71
+	addi $5,$0,300
+	addi $6,$0,0		
+	addi $7,$0,100
+	addi $2,$0,31
+	syscall
+
+temporizador: addi $9,$0,700000
+timer: beq $9,$0,icenario
+	nop
+	addi $9,$9,-1
+	
+	j timer
+
+icenario: addi $9,$0,0
 
 cenario: 	lui $8, 0x1001
 	ori $9, 0x5c9df2

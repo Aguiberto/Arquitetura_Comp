@@ -1,52 +1,53 @@
 .text
-		# parte 2
-		# la si sib la
+		# PARTE 4
+		# MI,DO,RE,SI
+		
 main:
-	# LA
-	addi $4,$0,69
-	addi $5,$0,500
+	# MI
+	addi $4,$0,64
+	addi $5,$0,400
 	addi $6,$0,0		
 	addi $7,$0,100
 	addi $2,$0,31
 	syscall
 	
 	# PAUSA
-	addi $4,$0,370
+	addi $4,$0,400
 	addi $2,$0,32
 	syscall
 	
-	# SI
+	# DO
+	addi $4,$0,60
+	addi $5,$0,300
+	addi $6,$0,0		
+	addi $7,$0,100
+	addi $2,$0,31
+	syscall
+	
+	# PAUSA
+	addi $4,$0,200
+	addi $2,$0,32
+	syscall
+	
+	# RE
+	addi $4,$0,62
+	addi $5,$0,300
+	addi $6,$0,0		
+	addi $7,$0,100
+	addi $2,$0,31
+	syscall
+	
+	# PAUSA
+	addi $4,$0,200
+	addi $2,$0,32
+	syscall
+	
+	# SI 
 	addi $4,$0,71
-	addi $5,$0,500
+	addi $5,$0,300
 	addi $6,$0,0		
 	addi $7,$0,100
 	addi $2,$0,31
 	syscall
 	
-	# PAUSA
-	addi $4,$0,370
-	addi $2,$0,32
-	syscall
 	
-	# SIB 
-	addi $4,$0,67
-	addi $5,$0,350
-	addi $6,$0,0		
-	addi $7,$0,100
-	addi $2,$0,31
-	syscall
-	
-	# PAUSA
-	addi $4,$0,250
-	addi $2,$0,32
-	syscall
-	
-	# LA
-	addi $4,$0,69
-	addi $5,$0,350
-	addi $6,$0,0		
-	addi $7,$0,100
-	addi $2,$0,31
-	syscall
-
-
