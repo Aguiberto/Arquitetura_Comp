@@ -1,309 +1,27 @@
 .text
-			# Super Mario - Overworld theme
+			# Super Mario - Flagpole Fanfare
 			# INSTRUMENTO : PIANO
 			# NOTAS: 
-			# DO, SOL , MI
-			# LA, SI, SIB, LA
-			# SOL, MI, SOL, LA
-			# FA, SOL
-			# MI, DO, RE, SI
+			# G3, C4, E4, G4, C5, E5, G5, B3
+			# Eb4, Ab4, C5, Eb5,Ab5, Bb5, Ab3
+			# F4, Bb4, D5, F5, Bb5, Bb5, Bb5, C6.
 			
-			# COLOCAR O TEMPO DE DURAÇÃO EM CADA NOTA
-
 main:
-	
-# ============== INTRODUÇÃO =============================
-	# MI
-	addi $4,$0,64
-	addi $5,$0,300
-	addi $6,$0,0		
-	addi $7,$0,100
-	addi $2,$0,31
-	syscall
-	
-	# PAUSA
-	addi $4,$0,200
-	addi $2,$0,32
-	syscall
-	
-	# MI
-	addi $4,$0,64
-	addi $5,$0,300
-	addi $6,$0,0		
-	addi $7,$0,100
-	addi $2,$0,31
-	syscall
-	
-	# PAUSA
-	addi $4,$0,200
-	addi $2,$0,32
-	syscall
-	
-	# MI
-	addi $4,$0,64
-	addi $5,$0,370
-	addi $6,$0,0		
-	addi $7,$0,100
-	addi $2,$0,31
-	syscall
-	
-	# PAUSA NO MEIO
-	addi $4,$0,250
-	addi $2,$0,32
-	syscall
-	
-	# DO
-	addi $4,$0,60
-	addi $5,$0,380
-	addi $6,$0,0		
-	addi $7,$0,100
-	addi $2,$0,31
-	syscall
-	
-	# PAUSA
-	addi $4,$0,250
-	addi $2,$0,32
-	syscall
-	
-	# MI
-	addi $4,$0,64
-	addi $5,$5,380
-	addi $6,$0,0		
-	addi $7,$0,100
-	addi $2,$0,31
-	syscall
-	
-	# PAUSA
-	addi $4,$0,250
-	addi $2,$0,32
-	syscall
-	
-	# SOL
-	addi $4,$0,67
-	addi $5,$0,580
-	addi $6,$0,0		
-	addi $7,$0,100
-	addi $2,$0,31
-	syscall
-	
-	# PAUSA FINAL
-	addi $4,$0,550
-	addi $2,$0,32
-	syscall
-	
-	# SOL GRAVE
+
+	# SOL - G3
 	addi $4,$0,55
-	addi $5,$0,580
-	addi $6,$0,0		
-	addi $7,$0,100
-	addi $2,$0,31
-	syscall
-	
-	# PAUSA FINAL
-	addi $4,$0,600
-	addi $2,$0,32
-	syscall
-	
-# ============ FIM INTRODUÇÃO =======================
-	
-	# DO 
-	addi $4,$0,60
-	addi $5,$0,950
-	addi $6,$0,0		
-	addi $7,$0,115
-	addi $2,$0,31
-	syscall
-	
-	# PAUSA
-	addi $4,$0,450
-	addi $2,$0,32
-	syscall
-	
-	# SOL
-	addi $4,$0,67
-	addi $5,$0,950
+	addi $5,$0,250
 	addi $6,$0,0		
 	addi $7,$0,100
 	addi $2,$0,31
 	syscall
 	
 	# PAUSA
-	addi $4,$0,450
+	addi $4,$0,250
 	addi $2,$0,32
 	syscall
 	
-	# MI 
-	addi $4,$0,64
-	addi $5,$0,950
-	addi $6,$0,0		
-	addi $7,$0,100
-	addi $2,$0,31
-	syscall
-	
-# =================================================
-			
-	# PAUSA
-	addi $4,$0,330
-	addi $2,$0,32
-	syscall
-
-
-# =============== PARTE 2 ========================
-
-	# LA
-	addi $4,$0,69
-	addi $5,$0,450
-	addi $6,$0,0		
-	addi $7,$0,100
-	addi $2,$0,31
-	syscall
-	
-	# PAUSA
-	addi $4,$0,300
-	addi $2,$0,32
-	syscall
-	
-	# SI
-	addi $4,$0,71
-	addi $5,$0,450
-	addi $6,$0,0		
-	addi $7,$0,100
-	addi $2,$0,31
-	syscall
-	
-	# PAUSA
-	addi $4,$0,300
-	addi $2,$0,32
-	syscall
-	
-	# SIB 
-	addi $4,$0,67
-	addi $5,$0,300
-	addi $6,$0,0		
-	addi $7,$0,100
-	addi $2,$0,31
-	syscall
-	
-	# PAUSA
-	addi $4,$0,200
-	addi $2,$0,32
-	syscall
-	
-	# LA
-	addi $4,$0,69
-	addi $5,$0,300
-	addi $6,$0,0		
-	addi $7,$0,100
-	addi $2,$0,31
-	syscall
-
-# ================================================
-	
-	# PAUSA
-	addi $4,$0,300
-	addi $2,$0,32
-	syscall
-	
-# ================ PARTE 3 =======================
-	
-	# SOL
-	addi $4,$0,55
-	addi $5,$0,330
-	addi $6,$0,0		
-	addi $7,$0,100
-	addi $2,$0,31
-	syscall
-	
-	# PAUSA
-	addi $4,$0,240
-	addi $2,$0,32
-	syscall
-	
-	# MI
-	addi $4,$0,64
-	addi $5,$0,330
-	addi $6,$0,0		
-	addi $7,$0,100
-	addi $2,$0,31
-	syscall
-	
-	# PAUSA
-	addi $4,$0,240
-	addi $2,$0,32
-	syscall
-	
-	# SOL
-	addi $4,$0,67
-	addi $5,$0,340
-	addi $6,$0,0		
-	addi $7,$0,100
-	addi $2,$0,31
-	syscall
-	
-	# PAUSA
-	addi $4,$0,240
-	addi $2,$0,32
-	syscall
-	
-	# LA 
-	addi $4,$0,69
-	addi $5,$0,340
-	addi $6,$0,0		
-	addi $7,$0,100
-	addi $2,$0,31
-	syscall
-	
-# =======================================
-	
-	# PAUSA
-	addi $4,$0,260
-	addi $2,$0,32
-	syscall
-	
-	# FA
-	addi $4,$0,65
-	addi $5,$0,260
-	addi $6,$0,0		
-	addi $7,$0,100
-	addi $2,$0,31
-	syscall
-	
-	# PAUSA
-	addi $4,$0,210
-	addi $2,$0,32
-	syscall
-	
-	# SOL 
-	addi $4,$0,67
-	addi $5,$0,260
-	addi $6,$0,0		
-	addi $7,$0,100
-	addi $2,$0,31
-	syscall
-
-# =========================================
-	
-	# PAUSA
-	addi $4,$0,200
-	addi $2,$0,32
-	syscall
-	
-# =============== PARTE 4 =================
-
-	# MI
-	addi $4,$0,64
-	addi $5,$0,350
-	addi $6,$0,0		
-	addi $7,$0,100
-	addi $2,$0,31
-	syscall
-	
-	# PAUSA
-	addi $4,$0,300
-	addi $2,$0,32
-	syscall
-	
-	# DO
+	# DO - C4
 	addi $4,$0,60
 	addi $5,$0,250
 	addi $6,$0,0		
@@ -316,9 +34,9 @@ main:
 	addi $2,$0,32
 	syscall
 	
-	# RE
-	addi $4,$0,62
-	addi $5,$0,300
+	# MI - E4
+	addi $4,$0,64
+	addi $5,$0,250
 	addi $6,$0,0		
 	addi $7,$0,100
 	addi $2,$0,31
@@ -329,9 +47,280 @@ main:
 	addi $2,$0,32
 	syscall
 	
-	# SI 
-	addi $4,$0,71
-	addi $5,$0,300
+	# SOL - G4
+	addi $4,$0,67
+	addi $5,$0,250
+	addi $6,$0,0		
+	addi $7,$0,100
+	addi $2,$0,31
+	syscall
+	
+	# PAUSA
+	addi $4,$0,200
+	addi $2,$0,32
+	syscall
+	
+	# DO - C5
+	addi $4,$0,72
+	addi $5,$0,250
+	addi $6,$0,0		
+	addi $7,$0,100
+	addi $2,$0,31
+	syscall
+	
+	# PAUSA
+	addi $4,$0,200
+	addi $2,$0,32
+	syscall
+	
+	# MI - E5
+	addi $4,$0,76
+	addi $5,$0,250
+	addi $6,$0,0		
+	addi $7,$0,100
+	addi $2,$0,31
+	syscall
+	
+	# PAUSA
+	addi $4,$0,200
+	addi $2,$0,32
+	syscall
+
+	# SOL - G5
+	addi $4,$0,79
+	addi $5,$0,500
+	addi $6,$0,0		
+	addi $7,$0,100
+	addi $2,$0,31
+	syscall
+	
+	# PAUSA
+	addi $4,$0,200
+	addi $2,$0,32
+	syscall
+	
+	# LA - Ab3
+	addi $4,$0,56
+	addi $5,$0,500
+	addi $6,$0,0		
+	addi $7,$0,80
+	addi $2,$0,31
+	syscall
+	
+# ========================================
+		
+	# PAUSA
+	addi $4,$0,350
+	addi $2,$0,32
+	syscall
+	
+	
+# ========== PARTE 2 ====================
+
+	
+	# MI - Eb4
+	addi $4,$0,63
+	addi $5,$0,250
+	addi $6,$0,0		
+	addi $7,$0,100
+	addi $2,$0,31
+	syscall
+	
+	# PAUSA
+	addi $4,$0,200
+	addi $2,$0,32
+	syscall
+	
+	# LA - Ab4
+	addi $4,$0,68
+	addi $5,$0,250
+	addi $6,$0,0		
+	addi $7,$0,100
+	addi $2,$0,31
+	syscall
+	
+	# PAUSA
+	addi $4,$0,200
+	addi $2,$0,32
+	syscall
+	
+	# DO - C5
+	addi $4,$0,72
+	addi $5,$0,250
+	addi $6,$0,0		
+	addi $7,$0,100
+	addi $2,$0,31
+	syscall
+	
+	# PAUSA
+	addi $4,$0,200
+	addi $2,$0,32
+	syscall
+	
+	# MI - Eb5
+	addi $4,$0,75
+	addi $5,$0,250
+	addi $6,$0,0		
+	addi $7,$0,100
+	addi $2,$0,31
+	syscall
+	
+	# PAUSA
+	addi $4,$0,200
+	addi $2,$0,32
+	syscall
+	
+	# LA - Ab5
+	addi $4,$0,80
+	addi $5,$0,250
+	addi $6,$0,0		
+	addi $7,$0,100
+	addi $2,$0,31
+	syscall
+	
+	# PAUSA
+	addi $4,$0,200
+	addi $2,$0,32
+	syscall
+
+	# SI - Bb5
+	addi $4,$0,82
+	addi $5,$0,500
+	addi $6,$0,0		
+	addi $7,$0,100
+	addi $2,$0,31
+	syscall
+	
+	# PAUSA
+	addi $4,$0,200
+	addi $2,$0,32
+	syscall
+	
+	# Si - Ab3
+	addi $4,$0,58
+	addi $5,$0,500
+	addi $6,$0,0		
+	addi $7,$0,80
+	addi $2,$0,31
+	syscall
+
+# ======================================	
+			
+	# PAUSA
+	addi $4,$0,350
+	addi $2,$0,32
+	syscall
+	
+# ========== PARTE 2 ====================
+
+	
+	# FA - F4
+	addi $4,$0,65
+	addi $5,$0,250
+	addi $6,$0,0		
+	addi $7,$0,100
+	addi $2,$0,31
+	syscall
+	
+	# PAUSA
+	addi $4,$0,200
+	addi $2,$0,32
+	syscall
+	
+	# SI - Bb4
+	addi $4,$0,70
+	addi $5,$0,500
+	addi $6,$0,0		
+	addi $7,$0,100
+	addi $2,$0,31
+	syscall
+	
+	# PAUSA
+	addi $4,$0,200
+	addi $2,$0,32
+	syscall
+	
+	# RE - D5
+	addi $4,$0,74
+	addi $5,$0,500
+	addi $6,$0,0		
+	addi $7,$0,100
+	addi $2,$0,31
+	syscall
+	
+	# PAUSA
+	addi $4,$0,200
+	addi $2,$0,32
+	syscall
+	
+	# FA - F5
+	addi $4,$0,77
+	addi $5,$0,600
+	addi $6,$0,0		
+	addi $7,$0,100
+	addi $2,$0,31
+	syscall
+	
+	# PAUSA
+	addi $4,$0,250
+	addi $2,$0,32
+	syscall
+	
+	# SI - Bb5
+	addi $4,$0,82
+	addi $5,$0,500
+	addi $6,$0,0		
+	addi $7,$0,100
+	addi $2,$0,31
+	syscall
+	
+	# PAUSA
+	addi $4,$0,200
+	addi $2,$0,32
+	syscall
+	
+	# SI - Bb5
+	addi $4,$0,82
+	addi $5,$0,250
+	addi $6,$0,0		
+	addi $7,$0,100
+	addi $2,$0,31
+	syscall
+	
+	# PAUSA
+	addi $4,$0,200
+	addi $2,$0,32
+	syscall
+	
+	# SI - Bb5
+	addi $4,$0,82
+	addi $5,$0,250
+	addi $6,$0,0		
+	addi $7,$0,100
+	addi $2,$0,31
+	syscall
+	
+	# PAUSA
+	addi $4,$0,200
+	addi $2,$0,32
+	syscall
+	
+	# SI - Bb5
+	addi $4,$0,82
+	addi $5,$0,250
+	addi $6,$0,0		
+	addi $7,$0,100
+	addi $2,$0,31
+	syscall
+	
+	# PAUSA
+	addi $4,$0,200
+	addi $2,$0,32
+	syscall
+
+	# DO - C6
+	addi $4,$0,84
+	addi $5,$0,800
 	addi $6,$0,0		
 	addi $7,$0,100
 	addi $2,$0,31

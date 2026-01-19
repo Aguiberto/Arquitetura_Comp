@@ -6,67 +6,78 @@
 			# COLOCAR O TEMPO DE DURAÇÃO EM CADA NOTA
 
 main:	
-	addi $6,$0,0		# instrumento
-	addi $7,$0,100		# volume
+			# volume
 
 	# MI
-	addi $5,$0,370
 	addi $4,$0,64
+	addi $5,$0,300
+	addi $6,$0,0		
+	addi $7,$0,100
 	addi $2,$0,31
 	syscall
 	
 	# PAUSA
-	addi $4,$0,350
+	addi $4,$0,230
 	addi $2,$0,32
 	syscall
 	
 	# MI
-	addi $5,$0,370
 	addi $4,$0,64
+	addi $5,$0,300
+	addi $6,$0,0		
+	addi $7,$0,100
 	addi $2,$0,31
 	syscall
 	
 	# PAUSA
-	addi $4,$0,350
+	addi $4,$0,230
 	addi $2,$0,32
 	syscall
 	
 	# MI
-	addi $5,$0,370
 	addi $4,$0,64
+	addi $5,$0,400
+	addi $6,$0,0		
+	addi $7,$0,100
 	addi $2,$0,31
 	syscall
 	
 	# PAUSA NO MEIO
-	addi $4,$0,340
+	addi $4,$0,300
 	addi $2,$0,32
 	syscall
 	
 	# DO
-	addi $5,$0,480
 	addi $4,$0,60
+	addi $5,$0,380
+	addi $6,$0,0		
+	addi $7,$0,100
 	addi $2,$0,31
 	syscall
 	
 	# PAUSA
-	addi $4,$0,350
+	addi $4,$0,250
 	addi $2,$0,32
 	syscall
 	
 	# MI
-	addi $5,$5,480
 	addi $4,$0,64
+	addi $5,$5,380
+	addi $6,$0,0		
+	addi $7,$0,100
 	addi $2,$0,31
 	syscall
 	
 	# PAUSA
-	addi $4,$0,350
+	addi $4,$0,250
 	addi $2,$0,32
 	syscall
 	
 	# SOL
-	addi $5,$0,580
 	addi $4,$0,67
+	addi $5,$0,580
+	addi $6,$0,0		
+	addi $7,$0,100
 	addi $2,$0,31
 	syscall
 	
@@ -76,8 +87,10 @@ main:
 	syscall
 	
 	# SOL GRAVE
-	addi $5,$0,580
 	addi $4,$0,55
+	addi $5,$0,580
+	addi $6,$0,0		
+	addi $7,$0,100
 	addi $2,$0,31
 	syscall
 	
@@ -87,159 +100,3 @@ main:
 	syscall
 	
 	
-	
-# --------- PARTE 1 ------------------
-
-	# DO
-	addi $5,$0,600
-	addi $4,$0,48
-	addi $2,$0,31
-	syscall
-	
-	# PAUSA
-	addi $4,$0,550
-	addi $2,$0,32
-	syscall
-	
-	# SOL
-	addi $5,$0,600
-	addi $4,$0,55
-	addi $2,$0,31
-	syscall
-	
-	# PAUSA
-	addi $4,$0,550
-	addi $2,$0,32
-	syscall
-	
-	# MI
-	addi $5,$0,600
-	addi $4,$0,52
-	addi $2,$0,31
-	syscall
-
-	# PAUSA
-	addi $4,$0,600
-	addi $2,$0,32
-	syscall
-		
-#------- PARTE 2 ------------------
-	
-	# LA
-	addi $5,$0,550
-	addi $4,$0,57
-	addi $2,$0,31
-	syscall
-	
-	# PAUSA
-	addi $4,$0,400
-	addi $2,$0,32
-	syscall
-	
-	# SI
-	addi $5,$0,600
-	addi $4,$0,59
-	addi $2,$0,31
-	syscall
-	
-	# PAUSA
-	addi $4,$0,450
-	addi $2,$0,32
-	syscall
-	
-	# SIb
-	addi $5,$0,480
-	addi $4,$0,58
-	addi $2,$0,31
-	syscall
-	
-	# PAUSA
-	addi $4,$0,350
-	addi $2,$0,32
-	syscall
-	
-	# LA
-	addi $5,$0,480
-	addi $4,$0,57
-	addi $2,$0,31
-	syscall
-	
-	# PAUSA
-	addi $4,$0,600
-	addi $2,$0,32
-	syscall
-	
-# ------- PARTE 3 -------------
-
-	# SOL
-	addi $5,$0,400
-	addi $4,$0,55
-	addi $2,$0,31
-	syscall
-	
-	# PAUSA
-	addi $4,$0,280
-	addi $2,$0,32
-	syscall
-	
-	# MI
-	addi $5,$0,300
-	addi $4,$0,52
-	addi $2,$0,31
-	syscall
-	
-	# PAUSA
-	addi $4,$0,280
-	addi $2,$0,32
-	syscall
-	
-	# SOL
-	addi $5,$0,310
-	addi $4,$0,55
-	addi $2,$0,31
-	syscall
-	
-	# PAUSA
-	addi $4,$0,280
-	addi $2,$0,32
-	syscall
-	
-	# LA
-	addi $5,$0,300
-	addi $4,$0,57
-	addi $2,$0,31
-	syscall
-	
-	
-	# PAUSA
-	addi $4,$0,600
-	addi $2,$0,32
-	syscall
-	
-# ---------- PARTE 4 -------------
-
-	# FA
-	addi $5,$0,400
-	addi $4,$0,53
-	addi $2,$0,31
-	syscall
-	
-	# PAUSA
-	addi $4,$0,400
-	addi $2,$0,32
-	syscall
-	
-	# SOL
-	addi $5,$0,400
-	addi $4,$0,55
-	addi $2,$0,31
-	syscall
-	
-	# PAUSA
-	addi $4,$0,600
-	addi $2,$0,32
-	syscall
-	
-
-	
-
